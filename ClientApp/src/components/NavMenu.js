@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import './NavMenu.css';
+import LoginButton from './auth/login';
+import LogoutButton from './auth/logout';
+import Profile from './auth/profile';
 
 export class NavMenu extends Component {
   static displayName = NavMenu.name;
@@ -43,6 +46,9 @@ export class NavMenu extends Component {
             </Collapse>
           </Container>
         </Navbar>
+        <LoginButton/>
+        <LogoutButton/>
+        <Profile/>
       </header>
     );
   }
